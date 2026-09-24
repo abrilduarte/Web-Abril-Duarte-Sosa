@@ -221,9 +221,8 @@
   nav.links a:hover, nav.links a:focus-visible, nav.links a.is-active{ color:var(--ink); }
   nav.links a:hover::after, nav.links a:focus-visible::after, nav.links a.is-active::after{ transform:scaleX(1); }
 
-  .nav-burger{ display:none; border:1px solid var(--line); background:transparent; width:38px; height:38px; cursor:pointer; position:relative; flex:none; }
-  .nav-burger span, .nav-burger span::before, .nav-burger span::after{ content:""; position:absolute; left:9px; right:9px; height:1px; background:var(--ink); }
-  .nav-burger span{ top:18px; } .nav-burger span::before{ top:-6px; } .nav-burger span::after{ top:6px; }
+  .nav-burger{ display:none; border:1px solid var(--line); background:transparent; width:38px; height:38px; cursor:pointer; flex:none; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+  .nav-burger span{ display:block; width:20px; height:1px; background:var(--ink); }
 
   /* ---------- Hero (split panel, sticky background) ---------- */
   .hero-wrap{ position:relative; height:200vh; }
@@ -568,5 +567,5 @@
     .two-col, .choice-row{ grid-template-columns:1fr; }
     section.content{ padding:76px 0; }
     .hero-panel-2{ padding:0 24px; }
-    header.site-header{ padding-bottom:0; background:var(--bg); border-bottom:1px solid var(--line); }
+        header.site-header{ padding-bottom:0; background:linear-gradient(to bottom, rgba(4,5,12,.92) 0%, rgba(4,5,12,.55) 70%, rgba(4,5,12,.15) 100%); border-bottom:none; }
   }
