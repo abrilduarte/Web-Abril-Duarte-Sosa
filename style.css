@@ -278,7 +278,8 @@
     border-radius:2px; transform:translateX(-50%); animation:scrollDot 1.8s ease-in-out infinite; }
   @keyframes scrollDot{ 0%{ opacity:1; transform:translate(-50%,0);} 70%{ opacity:0; transform:translate(-50%,10px);} 100%{opacity:0;} }
 
-  .hero-panel-2{ top:100vh; align-items:center; }
+  .hero-panel-2{ padding:0 24px; }
+  .hero-panel-1{ padding-top:18vh; }
   .hero-journey{
     max-width:560px;
     text-align:center;
